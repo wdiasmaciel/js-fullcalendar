@@ -87,11 +87,13 @@ button:hover {
     flex: 1.7;
 }
 
-/* Forçar títulos das colunas do calendário a ocuparem uma linha */
-.fc-col-header-cell {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+/* Forçar títulos das colunas do calendário a ocuparem uma linha 
+   e adicionarem reticências se o texto for muito longo.
+*/
+.fc-col-header-cell { /* Seleciona as células do cabeçalho das colunas no calendário. */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas. */
+    overflow: hidden; /* Oculta o texto que ultrapassa o limite da célula. */
+    text-overflow: ellipsis; /* Adiciona reticências (...) se o texto for muito longo. */
 }
 
 /* Forçar colunas do calendário a terem a mesma largura */
