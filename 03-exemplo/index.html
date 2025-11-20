@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FullCalendar</title>
+
+    <!-- FullCalendar (v5) CSS and plugins CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/daygrid/main.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/timegrid/main.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main>
+        <h1>Calendário de Eventos</h1>
+        <section>
+            <aside>
+                <form>
+                    <div class="entradaDoFormulario">
+                        <label for="titulo">Título:</label>
+                        <input id="titulo" type="text" placeholder="título do evento">
+                    </div>
+
+                    <div class="entradaDoFormulario">
+                        <label for="descricao">Descrição:</label>
+                        <input id="descricao" type="text" placeholder="descrição do evento">
+                    </div>
+
+                    <div class="entradaDoFormulario">
+                        <label for="inicio">Início:</label>
+                        <input id="inicio" type="datetime-local" placeholder="início do evento">
+                    </div>
+
+                    <div class="entradaDoFormulario">
+                        <label for="fim">Fim:</label>
+                        <input id="fim" type="datetime-local" placeholder="fim do evento">
+                    </div>
+
+                    <div class="entradaDoFormulario">
+                        <label for="Cor">Cor:</label>
+                        <input id="cor" type="color" placeholder="cor do evento">
+                    </div>
+
+                    <div class="entradaDoFormulario">
+                        <label for="duracao">O dia todo:</label>
+                        <input id="duracao" type="checkbox">
+                    </div>
+
+                    <button>Adicionar Evento</button>
+                </form>
+            </aside>
+            <div id="meu-calendario"></div>
+        </section>
+    </main>
+
+    <!-- FullCalendar (v5) JS and required plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/daygrid/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/timegrid/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/interaction/main.min.js"></script>
+
+    <script src="funcionalidade.js"></script>
+
+</body>
+
+</html>
