@@ -25,6 +25,7 @@ const eventos = [
 document.addEventListener('DOMContentLoaded', function () {
     const elementoDoCalendario = document.getElementById('meu-calendario');
     const calendario = new FullCalendar.Calendar(elementoDoCalendario, {
+        locale: 'pt-br',
         events: eventos,  // Passa os eventos para o calendário
         headerToolbar: {
             left: 'prev,next today',
