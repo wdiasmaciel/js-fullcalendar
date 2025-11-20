@@ -28,3 +28,19 @@ h1 {
    margin: 0 auto;
    width: 100%;
 }
+
+/* Forçar títulos das colunas do calendário a ocuparem uma linha 
+   e adicionarem reticências se o texto for muito longo.
+*/
+.fc-col-header-cell { /* Seleciona as células do cabeçalho das colunas no calendário. */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas. */
+    overflow: hidden; /* Oculta o texto que ultrapassa o limite da célula. */
+    text-overflow: ellipsis; /* Adiciona reticências (...) se o texto for muito longo. */
+}
+
+/* Forçar colunas do calendário a terem a mesma largura */
+.fc-daygrid-col,
+.fc-timegrid-col {
+    width: 100% !important;
+    flex: 1 !important;
+}
