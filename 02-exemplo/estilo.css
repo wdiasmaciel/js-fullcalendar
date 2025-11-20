@@ -1,0 +1,30 @@
+* {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 50vw;
+    height: 90vh;
+    padding: 1rem;
+    margin: 0.7rem auto;
+    border: .1rem solid #ccc;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    box-shadow: 0rem 0.2rem .5rem 0.09rem #ddd;
+}
+
+h1 {
+    font-size: 2rem;
+    align-self: flex-start;
+    margin: 0 0 3rem 0;
+}
+
+#meu-calendario {
+   margin: 0 auto;
+   width: 100%;
+}
